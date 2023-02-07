@@ -26,67 +26,20 @@ function App() {
     { url: "#", title: "Sesc TV" },
   ];
 
-  const carrossel = [home_07, home_06, home_05, home_04]
-
   return (
     <div className="App">
       <Navbar navbarLinks={navbarLinks} imageIcon={home_Logo} imageLogo={Sesc_Logo} placeholder="Buscar..."/>
       <Hero imageSrc={HomeView} imgSeta={setaHome} />
       <br/>
       <br/>
-      <Slider
-        imageSrc={home_02}
-        title={"Educação"}
-        subtitle={
-          "Crianças, jovens, adultos e idosos encontram no Sesc um ambiente que promove o desenvolvimento integral, respeita as identidades culturais e os valores éticos e de cidadania."
-        }
-      />
-        <br/>
-        <br/>
-      <Slider
-        imageSrc={home_03}
-        title={"Cultura"}
-        subtitle={"O Sesc atua na área de Cultura como disseminador de vivências e valores. O estímulo ao debate e à reflexão, a valorização do artista, a promoção e difusão das manifestações artístico-culturais são bases do trabalho realizado pela instituição em todo o país."}
-        flipped={true}
-      />
-        <br/>
-       <br/>
-      <Slider
-        imageSrc={home_04}
-        title={"Saúde"}
-        subtitle={
-          "Crianças, jovens, adultos e idosos encontram no Sesc um ambiente que promove o desenvolvimento integral, respeita as identidades culturais e os valores éticos e de cidadania."
-        }
-      />
-        <br/>
-        <br/>
-      <Slider
-        imageSrc={home_05}
-        title={"Lazer"}
-        subtitle={"O Sesc atua na área de Cultura como disseminador de vivências e valores. O estímulo ao debate e à reflexão, a valorização do artista, a promoção e difusão das manifestações artístico-culturais são bases do trabalho realizado pela instituição em todo o país."}
-        flipped={true}
-      />
-        <br/>
-        <br/>
-      <Slider
-        imageSrc={home_06}
-        title={"Assistencia"}
-        subtitle={
-          "Crianças, jovens, adultos e idosos encontram no Sesc um ambiente que promove o desenvolvimento integral, respeita as identidades culturais e os valores éticos e de cidadania."
-        }
-      />
+      <Slider />
       <br/>
       <br/>
-      <Programming
-        imageSrc={carrossel}
-        imgCalendar={imgCalendaricon}
-        title={"Programação"}
-        subtitle={"Confira as programações de destaque da semana!"}
-        flipped={true}
-      />
+      <Programming />
       <Footer logoSesc={Sesc_Logo}/>
     </div>
   );
+  
 }
 
 export default App;

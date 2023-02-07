@@ -1,61 +1,72 @@
-﻿import React, { useState } from "react";
-import "./Slider.css";
-import { useInView } from "react-intersection-observer";
-
-const Slider = ({ imageSrc, title, subtitle, flipped }) => {
+﻿import './Slider.css';
+import React from "react";
+import { Parallax } from "react-parallax";
 
 
-  const [slider, setSlider] = useState(false);
+import home_02 from "../assets/Educação.png";
+import home_03 from "../assets/Cultura.png";
+import home_04 from "../assets/Saúde.png";
+import home_05 from "../assets/Lazer.png";
+import home_06 from "../assets/Assitência.png";
 
-  const { ref, inView } = useInView({
-    /* Optional options */
-    threshold: 0.4,
-  });
 
 
-  const changeBackground = () => {
-    if(window.scrollY >= 680) {
-      setSlider(true)
-    } else {
-      setSlider(false);
-    }
-  }
-
-  window.addEventListener('scroll', changeBackground)
-
-  const renderContent = () => {
-    if (!flipped) {
-      return (
-        <>
-          <img src={imageSrc} alt="slider" className="slider__image" />
-          <div className="slider__content">
-            <h1 className="slider__title">{title}</h1>
-            <p>{subtitle}</p>
-            <button className="button__slider">detalhes</button>
-          </div>
-        </>
-      );
-    } else {
-      return (
-        <>
-          <div className="slider__content">
-            <h1 className="slider__title">{title}</h1>
-            <p>{subtitle}</p>
-            <button className="button__slider">detalhes</button>
-          </div>
-          <img src={imageSrc} alt="Travel" className="slider__image" />
-        </>
-      );
-    }
-  };
+function Slider() {
 
   return (
-    <div className={slider ? 'slider--zoom' : 'slider--zoom-active'}slider--zoom>
-    <div className={inView ? "slider slider--zoom" : "slider"} ref={ref}>
-      {renderContent()}
-    </div>
-    </div>
+  <div className="Slider">
+          <Parallax strength={650} className="background_education">
+        <div className='content'>
+              <img src={home_02} alt="slider" className="slider__image" />
+           <div className="slider__content">
+             <h1 className="slider__title">Educação</h1>
+             <p className="slider_subtitle">Crianças, jovens, adultos e idosos encontram no Sesc um ambiente que promove o desenvolvimento integral, respeita as identidades culturais e os valores éticos e de cidadania. </p>
+            <button className="button__slider">+ detalhes</button>
+           </div>
+        </div>
+        /</Parallax>
+          <Parallax strength={650} className="background-culture">
+          <div className='content'>
+           <div className="slider__content">
+             <h1 className="slider__title">Cultura</h1>
+             <p className="slider_subtitle">Crianças, jovens, adultos e idosos encontram no Sesc um ambiente que promove o desenvolvimento integral, respeita as identidades culturais e os valores éticos e de cidadania. </p>
+            <button className="button__slider">+ detalhes</button>
+           </div>
+              <img src={home_03} alt="slider" className="slider__image" />
+        </div>
+        /</Parallax>
+          <Parallax strength={650} className="background-heath">
+          <div className='content'>
+              <img src={home_04} alt="slider" className="slider__image" />
+           <div className="slider__content">
+             <h1 className="slider__title">Saúde</h1>
+             <p className="slider_subtitle">Crianças, jovens, adultos e idosos encontram no Sesc um ambiente que promove o desenvolvimento integral, respeita as identidades culturais e os valores éticos e de cidadania. </p>
+            <button className="button__slider">+ detalhes</button>
+           </div>
+        </div>
+        /</Parallax>
+          <Parallax strength={650} className="background-funny">
+          <div className='content'>
+           <div className="slider__content">
+             <h1 className="slider__title">Lazer</h1>
+             <p className="slider_subtitle">Crianças, jovens, adultos e idosos encontram no Sesc um ambiente que promove o desenvolvimento integral, respeita as identidades culturais e os valores éticos e de cidadania. </p>
+            <button className="button__slider">+ detalhes</button>
+           </div>
+              <img src={home_05} alt="slider" className="slider__image" />
+        </div>
+        /</Parallax>
+          <Parallax strength={650} className="background-assistence">
+          <div className='content'>
+              <img src={home_06} alt="slider" className="slider__image" />
+           <div className="slider__content">
+             <h1 className="slider__title">Assitência</h1>
+             <p className="slider_subtitle">Crianças, jovens, adultos e idosos encontram no Sesc um ambiente que promove o desenvolvimento integral, respeita as identidades culturais e os valores éticos e de cidadania. </p>
+            <button className="button__slider">+ detalhes</button>
+           </div>
+        </div>
+        /</Parallax>
+  </div>
   );
-};
+}
 
 export default Slider;

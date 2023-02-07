@@ -1,111 +1,36 @@
-﻿.programming {
+﻿.programming__content {
+  padding: 65px;
+  margin-top: -90px;
+}
+
+.programming__title {
+  width: 320px;
+  height: 58px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
   display: flex;
   align-items: center;
-  margin: 20px;
-  opacity: 0;
-  transform: scale(85%);
-  transition: 2s;
-  flex-direction: column;
-  }
-  
-  .programming--zoom {
-    opacity: 1;
-    transform: scale(100%);
-    transition: 2s;
-  }
-  
-  .programming__image {
-    width: 388px;
-    height: 489px;
-    left: 124px;
-    top: 894px;
-    top: 100%;
-    bottom: -100%;
-    border-radius: 18.6566px 0px 0px 18.6566px;
-    flex-direction: column;
-  }
-  
-  .programming__content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .programming__title {
-    width: 750px;
-    height: 58px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    color: #0A0A0A;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
+  color: #0A0A0A;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
 
-  .programming__subtitle {
-    width: 750px;
-    height: 29px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 120%;
-    display: flex;
-    align-items: center;
-    color: #848484;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  .inner {
-    display: flex;
-  }
-
-  .item {
-    padding: 14px;
-  }
-
-  .item img {
-    max-width: 200px;
-    width: 50%;
-    height: 20%;
-    border-radius: 12px;
-    pointer-events: none;
-  }
-
-  .carrosel {
-    cursor: grab;
-    overflow: hidden;
-    background-color: #00862E;
-  }
-  .calendar__image {
-    position: relative;
-    width: 17.6px;
-    height: 17.58px;
-    flex: none;
-    top: 755px;
-    left: 690px;
-    background-color: #00862E;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .programming {
-      flex-direction: column;
-      background-color: rgb(236, 236, 236);
-    }
-  
-    .programming__image {
-      display: flex;
-      width: 388px;
-    }
-  }
-  
+.programming_subtitle {
+  width: 562px;
+  height: 29px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: #848484;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
