@@ -1,20 +1,15 @@
 import "./App.css";
 import HomeView from "./assets/COLÔNIA DE FÉRIAS SESC - 2022.mp4"
-import home_02 from "./assets/Educação.png";
-import home_03 from "./assets/Cultura.png";
-import home_04 from "./assets/Saúde.png";
-import home_05 from "./assets/Lazer.png";
-import home_06 from "./assets/Assitência.png";
-import home_07 from "./assets/Rectangle 73.png";
 import home_Logo from "./assets/Icon_Search.png";
 import Sesc_Logo from "./assets/logo Sesc.png";
 import setaHome from "./assets/Seta_Vector.png";
-import imgCalendaricon from "./assets/Vector_Calendar.png";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 import Programming from "./components/Programming";
 import Footer from "./components/Footer";
+import News from "./components/News";
+import QuickAccess from "./components/QuickAccess";
 
 function App() {
   const navbarLinks = [
@@ -36,6 +31,12 @@ function App() {
       <br/>
       <br/>
       <Programming />
+      <br/>
+      <br/>
+      <News/>
+      <br/>
+      <br/>
+      <QuickAccess />
       <Footer logoSesc={Sesc_Logo}/>
     </div>
   );

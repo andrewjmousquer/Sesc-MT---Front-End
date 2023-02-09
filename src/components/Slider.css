@@ -4,6 +4,8 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto auto;
+  transition-duration: 5s;
+  transition-property: all;
 }
 
 .content:hover {
@@ -12,16 +14,6 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  transition: width 2s, height 2s, transform 2s;
-}
-
-.content:after {
-  width: 1140px;
-  height: 447px;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  transform: scale(100%);
   transition: width 2s, height 2s, transform 2s;
 }
 
@@ -85,28 +77,6 @@
 .background_education {
   background-color: #006EAA;
 }
-
-.background_education:hover {
-  background-color: #006EAA;
-  opacity: 1;
-  transform: scale(100%);
-  transition: 2s;
-}
-
-.background_education:before {
-  background-color: #006EAA;
-  opacity: 1;
-  transform: scale(150%);
-  transition: 2s;
-}
-
-.background_education:before {
-  background-color: #006EAA;
-  opacity: 1;
-  transform: scale(100%);
-  transition: 2s;
-}
-
 .background-culture {
   background-color: #AB1B01;
 }
