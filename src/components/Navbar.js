@@ -52,14 +52,16 @@ const Navbar = ({ navbarLinks, placeholder, imageLogo }) => {
             </li>
           );
         })}    
-      </ul>           
-        <div className="search">
-          <div className="searchInputs">
-            <input type="text" placeholder={placeholder} />
-            <div className="searchIcon" onClick={toggleMenuClick}><AiOutlineSearch /></div>
-          </div>
-        </div>
-        <button className="button__home">Entrar</button>
+      </ul>   
+        <div className="search"> 
+            <input 
+            className="searchInputs" 
+            img={'AiOutlineSearch'}
+            type="text" 
+            placeholder={placeholder} 
+            />     
+        </div>  
+        <button className="button__home">Entrar</button>       
     </nav>
   );
 };

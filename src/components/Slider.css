@@ -10,7 +10,7 @@
 
 .content:hover {
   width: 1440px;
-  height: 647px;
+  height: 847px;
   box-sizing: border-box;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -75,17 +75,77 @@
 }
 
 .background_education {
+  width: 100%;
+  height: 100%;
   background-color: #006EAA;
+  animation-name: background_education;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background_education {
+  0%   {background-color:#006EAA;}
+  25%  {background-color:#17a3ee;;}
+  50%  {background-color:#006EAA;}
+  75%  {background-color:#17a3ee;;}
+  100% {background-color:#006EAA;}
 }
 .background-culture {
   background-color: #AB1B01;
+  animation-name: background-culture;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background-culture {
+  0%   {background-color:#AB1B01;}
+  25%  {background-color:#e9391a;;}
+  50%  {background-color:#AB1B01;}
+  75%  {background-color:#e9391a;;}
+  100% {background-color:#AB1B01;}
 }
 .background-heath {
   background-color: #00862E;
+  animation-name: background-heath;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background-heath {
+  0%   {background-color:#00862E;}
+  25%  {background-color:#0ada53;;}
+  50%  {background-color:#00862E;}
+  75%  {background-color:#0ada53;;}
+  100% {background-color:#00862E;}
 }
 .background-funny {
   background-color: #BF7202;
+  animation-name: background-funny;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes background-funny {
+  0%   {background-color:#BF7202;}
+  25%  {background-color:#f19d1d;;}
+  50%  {background-color:#BF7202;}
+  75%  {background-color:#f19d1d;;}
+  100% {background-color:#BF7202;}
 }
 .background-assistence {
   background-color: #3A1E69;
+  animation-name: background-assistence;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes background-assistence {
+  0%   {background-color:#3A1E69;}
+  25%  {background-color:#5010c0;;}
+  50%  {background-color:#3A1E69;}
+  75%  {background-color:#5010c0;;}
+  100% {background-color:#3A1E69;}
 }
