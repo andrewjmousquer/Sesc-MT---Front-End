@@ -31,6 +31,27 @@ export default function App() {
       <BrowserRouter>
         <Router />
       </BrowserRouter>
+
+      {/* <Navbar
+        navbarLinks={navbarLinks}
+        imageIcon={home_Logo}
+        imageLogo={Sesc_Logo}
+        placeholder="Buscar..."
+      />
+      <Hero imageSrc={HomeView} imgSeta={setaHome} />
+      <br />
+      <br />
+      <Slider />
+      <br />
+      <br /> */}
+      {/* <Programming /> */}
+      {/* <br />
+      <br />
+      <News />
+      <br />
+      <br />
+      <QuickAccess />
+      <Footer logoSesc={Sesc_Logo} /> */}
     </div>
   );
 }
