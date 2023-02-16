@@ -6,7 +6,7 @@ import setaHome from "./assets/Seta_Vector.png";
 import Hero from "./pages/Home/Hero";
 import Navbar from "./components/Navbar";
 import Slider from "./pages/Home/Slider";
-import Programming from "./pages/Home/Programming";
+// import Programming from "./pages/Home/Programming";
 import Footer from "./components/Footer";
 import News from "./pages/Home/News";
 import QuickAccess from "./pages/Home/QuickAccess";
@@ -23,24 +23,28 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar navbarLinks={navbarLinks} imageIcon={home_Logo} imageLogo={Sesc_Logo} placeholder="Buscar..."/>
+      <Navbar
+        navbarLinks={navbarLinks}
+        imageIcon={home_Logo}
+        imageLogo={Sesc_Logo}
+        placeholder="Buscar..."
+      />
       <Hero imageSrc={HomeView} imgSeta={setaHome} />
-      <br/>
-      <br/>
+      <br />
+      <br />
       <Slider />
-      <br/>
-      <br/>
+      <br />
+      <br />
       {/* <Programming /> */}
-      <br/>
-      <br/>
-      <News/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <News />
+      <br />
+      <br />
       <QuickAccess />
-      <Footer logoSesc={Sesc_Logo}/>
+      <Footer logoSesc={Sesc_Logo} />
     </div>
   );
-
 }
 
 export default App;
