@@ -56,7 +56,7 @@ export default function Programming() {
             <div
               onClick={() => moveDot(index + 1)}
               className={slideIndex === index + 1 ? "dot active" : "dot"}
-             />
+            />
           ))}
         </div>
       </div>

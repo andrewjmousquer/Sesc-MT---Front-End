@@ -50,7 +50,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "format": "prettier --write \"src/**/*.{js,jsx}\""
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,scss,css,json}"
   },
   "eslintConfig": {
     "extends": [
