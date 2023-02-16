@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import "./css/Slider.css";
+import "./styles.css";
 import leftArrow from "../../../assets/icons/left-arrow.svg";
 import rightArrow from "../../../assets/icons/right-arrow.svg";
 

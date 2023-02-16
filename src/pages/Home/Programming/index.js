@@ -1,7 +1,7 @@
 ﻿import React, {useState} from 'react'
-import './css/Programming.css'
+import './styles.css'
 import BtnSlider from './BtnProgramming'
-import dataSlider from './dataSlider'
+import dataSlider from '../Slider'
 import { BsCalendar3 } from 'react-icons/bs';
 
 export default function Programming() {

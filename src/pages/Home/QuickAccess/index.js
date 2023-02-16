@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import './css/QuickAccess.css'
+import './styles.css'
 
 export default function QuickAccess() {
     return (

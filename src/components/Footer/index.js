@@ -1,5 +1,5 @@
 ﻿
-import './css/Footer.css'
+import './styles.css'
 
 const Footer = ({logoSesc}) => {
     return (<footer className="footer">

@@ -3,13 +3,13 @@ import HomeView from "./assets/COLÔNIA DE FÉRIAS SESC - 2022.mp4";
 import home_Logo from "./assets/Icon_Search.png";
 import Sesc_Logo from "./assets/logo Sesc.png";
 import setaHome from "./assets/Seta_Vector.png";
-import Hero from "./components/pages/Home/Hero";
-import Navbar from "./components/pages/Home/Navbar";
-import Slider from "./components/pages/Home/Slider";
-import Programming from "./components/pages/Home/Programming";
-import Footer from "./components/pages/Home/Footer";
-import News from "./components/pages/Home/News";
-import QuickAccess from "./components/pages/Home/QuickAccess";
+import Hero from "./pages/Home/Hero";
+import Navbar from "./components/Navbar";
+import Slider from "./pages/Home/Slider";
+import Programming from "./pages/Home/Programming";
+import Footer from "./components/Footer";
+import News from "./pages/Home/News";
+import QuickAccess from "./pages/Home/QuickAccess";
 
 function App() {
   const navbarLinks = [
@@ -30,7 +30,7 @@ function App() {
       <Slider />
       <br/>
       <br/>
-      <Programming />
+      {/* <Programming /> */}
       <br/>
       <br/>
       <News/>

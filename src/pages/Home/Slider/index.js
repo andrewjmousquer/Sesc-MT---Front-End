@@ -1,4 +1,4 @@
-﻿import './css/Slider.css';
+﻿import './styles.css';
 import React from "react";
 import { Parallax } from "react-parallax";
 

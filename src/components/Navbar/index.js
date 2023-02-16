@@ -1,5 +1,5 @@
 ﻿import React, { useState } from "react";
-import "./css/Navbar.css";
+import "./styles.css";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = ({ navbarLinks, placeholder, imageLogo }) => {

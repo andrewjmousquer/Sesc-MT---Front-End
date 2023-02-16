@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import './css/News.css'
+import './styles.css'
 import { TbNews } from 'react-icons/tb';
 
 import newLetters from "../../../assets/newsLetter.png";
