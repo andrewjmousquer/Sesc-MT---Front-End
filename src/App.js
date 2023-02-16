@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import HomeView from "./assets/COLÔNIA DE FÉRIAS SESC - 2022.mp4";
 import home_Logo from "./assets/Icon_Search.png";
 import Sesc_Logo from "./assets/logo Sesc.png";
@@ -40,7 +40,7 @@ function App() {
       <Footer logoSesc={Sesc_Logo}/>
     </div>
   );
-  
+
 }
 
 export default App;
