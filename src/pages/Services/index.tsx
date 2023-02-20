@@ -1,6 +1,8 @@
 import { Card } from "../../components/Card";
 import { PaginationDefault } from "../../components/Pagination";
 
+import "./styles.scss";
+
 const cards = [
   {
     id: 1,
@@ -21,10 +23,10 @@ export function Services() {
   return (
     <>
       <section className="container my-5">
-        <section className="row">
+        <section className="card__wrap--outer">
           {cards.map((card) => {
             return (
-              <section key={card.id} className="col col-md-6 col-lg-4 mb-5">
+              <section key={card.id} className="card__wrap--inner">
                 <Card
                   key={card.id}
                   title={card.title}

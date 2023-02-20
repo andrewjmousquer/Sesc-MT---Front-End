@@ -16,7 +16,7 @@ export function Card(props: any) {
         <img src={img} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title m-0 pt-2 pb-3">{props.title}</h5>
-          <p className="card-text m-0 pb-4">{props.description}</p>
+          <p className="card-text m-0 pb-4 flexible">{props.description}</p>
           <span>+ detalhes</span>
         </div>
       </div>
