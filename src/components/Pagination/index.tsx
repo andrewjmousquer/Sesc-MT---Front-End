@@ -1,37 +1,26 @@
-import "./styles.scss";
+import Container from "react-bootstrap/Container";
+import Pagination from "react-bootstrap/Pagination";
 
-export function Pagination() {
+export function PaginationDefault() {
   return (
-    <section className="d-flex justify-content-center">
-      <nav aria-label="...">
-        <ul className="pagination">
-          <li className="page-item disabled">
-            <a className="page-link" href="/">
-              Previous
-            </a>
-          </li>
-          <li className="page-item active">
-            <a className="page-link" href="/">
-              1
-            </a>
-          </li>
-          <li className="page-item" aria-current="page">
-            <a className="page-link" href="/">
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="/">
-              3
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="/">
-              Next
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
+    <Container className="d-flex justify-content-center mb-5">
+      <Pagination>
+        <Pagination.First />
+        <Pagination.Prev />
+        <Pagination.Item>{1}</Pagination.Item>
+        <Pagination.Ellipsis />
+
+        <Pagination.Item>{10}</Pagination.Item>
+        <Pagination.Item>{11}</Pagination.Item>
+        <Pagination.Item active>{12}</Pagination.Item>
+        <Pagination.Item>{13}</Pagination.Item>
+        <Pagination.Item disabled>{14}</Pagination.Item>
+
+        <Pagination.Ellipsis />
+        <Pagination.Item>{20}</Pagination.Item>
+        <Pagination.Next />
+        <Pagination.Last />
+      </Pagination>
+    </Container>
   );
 }

@@ -1,4 +1,4 @@
-import { Pagination } from "../../../components/Pagination";
+import { PaginationDefault } from "../../../components/Pagination";
 
 import "./styles.scss";
 const img = require("../../../assets/img/Rectangle 49.png");
@@ -119,7 +119,7 @@ export function Cards() {
         </section>
       </section>
 
-      <Pagination />
+      <PaginationDefault />
     </>
   );
 }
