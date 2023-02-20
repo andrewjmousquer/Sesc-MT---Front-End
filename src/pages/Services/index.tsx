@@ -1,6 +1,5 @@
-import "../../App.scss";
-import "./styles.scss";
+import { Cards } from "./Cards";
 
 export function Services() {
-  return <div className="container">A</div>;
+  return <Cards />;
 }
