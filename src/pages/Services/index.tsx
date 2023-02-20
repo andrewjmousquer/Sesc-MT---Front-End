@@ -2,5 +2,5 @@ import "../../App.scss";
 import "./styles.scss";
 
 export function Services() {
-  return <h1>SESC MT</h1>;
+  return <div className="container">A</div>;
 }
