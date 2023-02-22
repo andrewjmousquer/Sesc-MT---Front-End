@@ -1,0 +1,56 @@
+@import "../../App.scss";
+
+a {
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 10px 11px 12px -5px rgba(0, 0, 0, 0.1);
+
+    .card-body {
+      background-color: $color-light-4;
+
+      .card-title {
+        font-family: "OpenSans-Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $color-dark-0;
+      }
+
+      .card-text {
+        height: 5.625rem;
+        font-family: "OpenSans-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $color-dark-0;
+      }
+
+      span {
+        font-family: "OpenSans-Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $color-dark-0;
+      }
+    }
+  }
+
+  &:hover {
+    .card {
+      .card-body {
+        .card-title,
+        .card-text {
+          color: $color-section-sau-1;
+        }
+
+        span {
+          color: transparent;
+        }
+      }
+    }
+  }
+}

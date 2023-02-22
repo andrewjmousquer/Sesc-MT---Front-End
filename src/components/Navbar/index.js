@@ -1,11 +1,11 @@
-﻿import React, { useState } from "react";
-import "./styles.scss";
+import { useState } from "react";
+import "./styles.css";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = ({ navbarLinks, placeholder, imageLogo }) => {
   // Determines if the "menu icon" was clicked or not. Note that this icon is only visible when the window width is small.
-  
-  const [navbar,setNavbar] = useState(false);
+
+  const [navbar, setNavbar] = useState(false);
 
   const [menuClicked, setMenuClicked] = useState(false);
 
@@ -14,20 +14,18 @@ const Navbar = ({ navbarLinks, placeholder, imageLogo }) => {
   };
 
   const changeBackground = () => {
-    if(window.scrollY >= 680) {
-      setNavbar(true)
+    if (window.scrollY >= 680) {
+      setNavbar(true);
     } else {
       setNavbar(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll', changeBackground)
-
-
+  window.addEventListener("scroll", changeBackground);
 
   return (
-    <nav className= {navbar ? 'navbar_active' : 'navbar'}>
-      <img src={imageLogo} alt="Sesc" className="navbar__logo"/>
+    <nav className={navbar ? "navbar_active" : "navbar"}>
+      <img src={imageLogo} alt="Sesc" className="navbar__logo" />
       {menuClicked ? (
         <FiX size={25} className={"navbar__menu"} onClick={toggleMenuClick} />
       ) : (
@@ -50,17 +48,17 @@ const Navbar = ({ navbarLinks, placeholder, imageLogo }) => {
               </a>
             </li>
           );
-        })}    
-      </ul>   
-        <div className="search"> 
-            <input 
-            className="searchInputs" 
-            img={'AiOutlineSearch'}
-            type="text" 
-            placeholder={placeholder} 
-            />     
-        </div>  
-        <button className="button__home">Entrar</button>       
+        })}
+      </ul>
+      <div className="search">
+        <input
+          className="searchInputs"
+          // img={"AiOutlineSearch"}
+          type="text"
+          placeholder={placeholder}
+        />
+      </div>
+      <button className="button__home">Entrar</button>
     </nav>
   );
 };
