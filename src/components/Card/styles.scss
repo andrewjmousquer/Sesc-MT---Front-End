@@ -40,13 +40,17 @@ a {
   }
 
   &:hover {
-    h5,
-    p {
-      color: $color-section-sau-1;
-    }
+    .card {
+      .card-body {
+        .card-title,
+        .card-text {
+          color: $color-section-sau-1;
+        }
 
-    span {
-      color: transparent;
+        span {
+          color: transparent;
+        }
+      }
     }
   }
 }
