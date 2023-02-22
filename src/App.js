@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import { Router } from "./routes/Router";
 
-import "./App.css";
+import "./App.scss";
 // import HomeView from "./assets/COLÔNIA DE FÉRIAS SESC - 2022.mp4";
 // import home_Logo from "./assets/Icon_Search.png";
 // import Sesc_Logo from "./assets/logo Sesc.png";
