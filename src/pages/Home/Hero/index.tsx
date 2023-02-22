@@ -1,9 +1,9 @@
 ﻿import React from "react";
 import "./styles.css"
 
-const Hero = ({ imageSrc, imgSeta }) => {
+function Hero( imageSrc: any, imgSeta: any )  {
     return <div className="hero">
-        <video autoPlay loop muted src={imageSrc} alt="view" className="hero__image" />
+        <video autoPlay loop muted src={imageSrc} className="hero__image" />
         <h1 className="hero__title">Lorem ipsum dolor</h1>
         <p className="hero__title_p">Serão executadas atividades lúdicas no espaço Recreativo propiciando desenvolvimento diversas habilidades: motoras, sociai e emocionais.</p>
         <p className="hero_footer">Role a página para baixo</p>

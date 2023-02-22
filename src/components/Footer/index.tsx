@@ -1,7 +1,9 @@
 ﻿
 import './styles.css'
 
-const Footer = ({logoSesc}) => {
+
+
+function Footer(logoSesc: any) {
     return (<footer className="footer">
        <section>
        <ul>
