@@ -6,31 +6,36 @@ a {
     border-radius: 8px;
     box-shadow: 10px 11px 12px -5px rgba(0, 0, 0, 0.1);
 
-    h5 {
-      font-family: "OpenSans-Bold";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 150%;
-      color: $color-dark-0;
-    }
+    .card-body {
+      background-color: $color-light-4;
 
-    p {
-      font-family: "OpenSans-Regular";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 150%;
-      color: $color-dark-0;
-    }
+      .card-title {
+        font-family: "OpenSans-Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $color-dark-0;
+      }
 
-    span {
-      font-family: "OpenSans-Bold";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 150%;
-      color: $color-dark-0;
+      .card-text {
+        height: 5.625rem;
+        font-family: "OpenSans-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $color-dark-0;
+      }
+
+      span {
+        font-family: "OpenSans-Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $color-dark-0;
+      }
     }
   }
 
