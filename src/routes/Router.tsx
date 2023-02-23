@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Menu from "../pages/Home";
+import Home from "../pages/Home";
 
 import { Services } from "../pages/Services";
 
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Menu />} />
+      <Route path="/" element={<Home />} />
       <Route path="/servicos" element={<Services />} />
     </Routes>
   );

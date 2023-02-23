@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 
 
 
-function Menu() {
+function Home() {
 
   return (
 
@@ -17,4 +17,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default Home;
