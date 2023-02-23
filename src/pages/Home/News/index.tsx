@@ -1,8 +1,8 @@
-﻿import "./styles.css";
+﻿import "./styles.scss";
 import { TbNews } from "react-icons/tb";
 
-import newLetters from "../../../assets/newsLetter.png";
-import news_double from "../../../assets/newsLetter1.png";
+import newLetters from "../../../assets/img/newsLetter.png";
+import news_double from "../../../assets/img/newsLetter1.png";
 
 export default function News() {
   return (

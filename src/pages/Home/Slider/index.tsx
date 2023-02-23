@@ -1,11 +1,11 @@
-import "./styles.css";
+import "./styles.scss";
 import { Parallax } from "react-parallax";
 
-import home_02 from "../../../assets/Educação.png";
-import home_03 from "../../../assets/Cultura.png";
-import home_04 from "../../../assets/Saúde.png";
-import home_05 from "../../../assets/Lazer.png";
-import home_06 from "../../../assets/Assitência.png";
+import home_02 from "../../../assets/img/Educação.png";
+import home_03 from "../../../assets/img/Cultura.png";
+import home_04 from "../../../assets/img/Saúde.png";
+import home_05 from "../../../assets/img/Lazer.png";
+import home_06 from "../../../assets/img/Assitência.png";
 
 function Slider() {
   return (

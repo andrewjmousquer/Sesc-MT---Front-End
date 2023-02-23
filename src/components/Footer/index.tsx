@@ -1,14 +1,16 @@
-import { SocialIcon } from "react-social-icons";
+import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagramSquare } from "react-icons/fa";
 import "./styles.scss"
 
 
 function Footer() {
+
+  const logoSesc = require("../../assets/img/logo Sesc.png");
     return (
       <div id="footer-wrap">
         <footer className="footer">
           <div className="top-footer">
             <div className="row">
-              <div className="col-md-2">
+              <div className="col-md-4">
                 <h4>Cartão Sesc</h4>
                 <ul className="footer-link">
                   <li>
@@ -23,7 +25,7 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-2">
+              <div className="col-md-4">
                 <h4>Serviços</h4>
                 <ul className="footer-link">
                   <li>
@@ -48,7 +50,7 @@ function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-4">
                 <h4>Programação</h4>
                 <ul className="footer-link">
                   <li>
@@ -66,22 +68,6 @@ function Footer() {
                       Próxima Semana
                     </a>
                   </li>
-                  <li>
-                    <div className="icons">
-                      <SocialIcon
-                        href="#"
-                        title="Facebook"
-                        network="facebook"
-                        bgColor="#ffffff"
-                      />
-                      <SocialIcon
-                        href="#"
-                        title="Link"
-                        network=""
-                        bgColor="#ffffff"
-                      />
-                    </div>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -89,22 +75,45 @@ function Footer() {
           <div className="bottom-footer">
             <div className="row">
               <div className="col-md-5">
-              <div className="col-md-3">
+
                 <div className="footer-logo">
                   <a href="/" title="Sesc_Logo">
                     <img
-                      src="../../assets/img/logo Sesc.png"
-                      width="72"
+                      src={logoSesc}
+                      width="250"
                       alt="Sesc_Logo"
                       className="img-fluid"
                     />
                   </a>
                 </div>
               </div>
-                <p className="copyright pt-3">
+                <p className="copyright pt-3 col-md-4">
                   Copyright &copy; 2022 Sesc Mato Grosso
                 </p>
-              </div>
+                <div className=" pt-3 col-md-3">
+                    <div className="icons">
+                      <FaLinkedin
+                        href="#"
+                        font-size="25"
+                        title="Linkedin"
+                      />
+                      <FaTwitterSquare
+                        href="#"
+                        font-size="25"
+                        title="Twitter"
+                      />
+                      <FaFacebookSquare
+                        href="#"
+                        font-size="25"
+                        title="Facebook"
+                      />
+                      <FaInstagramSquare
+                        href="#"
+                        font-size="25"
+                        title="Instagran"
+                      />
+                    </div>
+                </div>
             </div>
           </div>
         </footer>
