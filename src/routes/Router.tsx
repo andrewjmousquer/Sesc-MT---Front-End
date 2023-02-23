@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
 
+import { Home } from "../pages/Home";
 import { Services } from "../pages/Services";
 
 export function Router() {
@@ -11,6 +11,3 @@ export function Router() {
     </Routes>
   );
 }
-
-
-// element se tornar HOME adicionando todos os componentes de sua pasta criando um INDEX

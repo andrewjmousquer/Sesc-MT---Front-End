@@ -1,10 +1,10 @@
 ﻿import { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose} from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "./styles.scss";
 
-function Navbar() {
+export function Navbar() {
   const logoSesc = require("../../assets/img/logo Sesc.png");
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
@@ -37,7 +37,7 @@ function Navbar() {
     <header className="header">
       <div className="header__content">
         <Link to="/" className="header__content__logo">
-        <img src={logoSesc} alt="Logo-Sesc" />
+          <img src={logoSesc} alt="Logo-Sesc" />
         </Link>
         <nav
           className={`${"header__content__nav"}
@@ -63,11 +63,7 @@ function Navbar() {
             <li>
               <Link to="/sesc-tv">Sesc TV</Link>
             </li>
-            <input
-             className="login"
-             type="text"
-             placeholder="Busca..."
-            />
+            <input className="login" type="text" placeholder="Busca..." />
             <Link to="/login">
               <button className="btn">Login</button>
             </Link>
@@ -84,5 +80,3 @@ function Navbar() {
     </header>
   );
 }
-
-export default Navbar;
