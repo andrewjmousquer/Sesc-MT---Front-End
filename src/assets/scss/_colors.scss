@@ -97,10 +97,12 @@ $color-section-ass-2: #6d519c;
  * UI Colors - Overlay
  *
  */
-$overlay-0: linear-gradient(180deg, rgba(29, 29, 27, 0.03) 0%, #1d1d1b 78.44%);
-$overlay-1: rgba(1, 1, 1, 0.57);
-$overlay-2: rgba(10, 10, 10, 0.2);
+$overlay-0: rgba(1, 1, 1, 0.57);
+$overlay-1: rgba(10, 10, 10, 0.2);
+$overlay-2: rgba(34, 34, 34, 0.8);
 $overlay-3: linear-gradient(180deg, rgba(0, 22, 42, 0.2) 0%, #00162a 100%);
+$overlay-4: linear-gradient(180deg, rgba(29, 29, 27, 0.03) 0%, #1d1d1b 78.44%);
+$overlay-5: linear-gradient(180deg, rgba(34, 34, 34, 0) 0%, rgba(34, 34, 34, 0.560146) 47.07%, #222222 74.57%, #222222 79.84%);
 
 /* Lazer  */
 $overlay-section-laz: linear-gradient(
