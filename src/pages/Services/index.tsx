@@ -1,4 +1,4 @@
-import { Navbar } from "../../components/Navbar";
+// import { Navbar } from "../../components/Navbar";
 import { HeroPages } from "../../components/HeroPages";
 // import { Card } from "../../components/Card";
 // import { PaginationDefault } from "../../components/Pagination";
@@ -52,7 +52,7 @@ import { HeroPages } from "../../components/HeroPages";
 export function Services() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroPages />
 
       {/* <section className="container my-5">
