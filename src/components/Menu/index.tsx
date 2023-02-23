@@ -1,53 +1,89 @@
-﻿import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-// import { ReactComponent as Hamburger } from '../../assets/icons/hamburger.svg'
-// import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
-import './Menu.css'
+﻿import React, { useEffect, useState } from "react";
+import { BiMenuAltRight } from "react-icons/bi";
+import { AiOutlineClose} from "react-icons/ai";
+import { Link, useNavigate } from "react-router-dom";
+import "./navbar.scss";
 
-const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
+function Navbar() {
+  const navigate = useNavigate();
+  const logoSesc = require("../../assets/img/logo Sesc.png");
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [size, setSize] = useState({
+    width: 0,
+    height: 0,
+  });
+  useEffect(() => {
+    const handleResize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", handleResize);
 
-  const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar)
-  }
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (size.width > 768 && menuOpen) {
+      setMenuOpen(false);
+    }
+  }, [size.width, menuOpen]);
+
+  const menuToggleHandler = () => {
+    setMenuOpen((p) => !p);
+  };
 
   return (
-    <nav className="navbar">
-      <div className="container">
-        <div className="logo">
-          {/* <Brand /> */}
-        </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          {/* <Hamburger /> */}
-        </div>
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+    <header className="header">
+      <div className="header__content">
+        <Link to="/" className="header__content__logo">
+        <img src={logoSesc} alt="Logo-Sesc" />
+        </Link>
+        <nav
+          className={`${"header__content__nav"}
+          ${menuOpen && size.width < 768 ? `${"isMenu"}` : ""}
+          }`}
+        >
           <ul>
             <li>
-              <NavLink to="/">Institucional</NavLink>
+              <Link to="/">Institucional</Link>
             </li>
             <li>
-              <NavLink to="/cartao-sesc">Cartão Sesc</NavLink>
+              <Link to="/cartao-sesc">Cartão Sesc</Link>
             </li>
             <li>
-              <NavLink to="/servicos">Serviços</NavLink>
+              <Link to="/servicos">Serviços</Link>
             </li>
             <li>
-              <NavLink to="/unidades">Unidades</NavLink>
+              <Link to="/unidades">Unidades</Link>
             </li>
             <li>
-              <NavLink to="/sesc-tv">Sesc TV</NavLink>
+              <Link to="/programacao">Programação</Link>
             </li>
-          <input 
-            className="searchInputs" 
-            type="text" 
-            placeholder="Buscar" 
-            />   
-            <button className="button__home">Entrar</button>    
+            <li>
+              <Link to="/sesc-tv">Sesc TV</Link>
+            </li>
+            <input
+             className="login"
+             type="text"
+             placeholder="Busca..."
+            />
+            <Link to="/login">
+              <button className="btn">Login</button>
+            </Link>
           </ul>
+        </nav>
+        <div className="header__content__toggle">
+          {!menuOpen ? (
+            <BiMenuAltRight onClick={menuToggleHandler} />
+          ) : (
+            <AiOutlineClose onClick={menuToggleHandler} />
+          )}
         </div>
       </div>
-    </nav>
-  )
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;
