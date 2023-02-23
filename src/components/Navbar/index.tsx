@@ -2,7 +2,7 @@
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose} from "react-icons/ai";
 import { Link } from "react-router-dom";
-import "./navbar.scss";
+import "./styles.scss";
 
 function Navbar() {
   const logoSesc = require("../../assets/img/logo Sesc.png");

@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { Router } from "./routes/Router";
 import "./App.scss";
-import Hero from "./pages/Home/Hero";
+
 
 
 function App() {
@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Router/>
-        <Hero />
       </BrowserRouter>
     </div>
   );
