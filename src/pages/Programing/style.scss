@@ -1,1 +1,87 @@
-﻿
+﻿@import "../../App.scss";
+
+a {
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 10px 11px 12px -5px rgba(0, 0, 0, 0.1);
+
+    .card-body {
+      background-color: $color-light-4;
+
+      .card-title {
+        font-family: "OpenSans-Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $color-dark-0;
+      }
+
+      .card-text {
+        height: 5.625rem;
+        font-family: "OpenSans-Regular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $color-dark-0;
+      }
+
+      span {
+        font-family: "OpenSans-Bold";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 150%;
+        color: $color-dark-0;
+      }
+    }
+  }
+
+  &:hover {
+    .card {
+      .card-body {
+        .card-title,
+        .card-text {
+          color: $color-section-sau-1;
+        }
+
+        span {
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+h2
+{
+  font-family: 'Open Sans';
+  font-style: normal;
+  color: #0A0A0A;
+  margin-left: 25px;
+}
+
+
+div {
+  .background-radius {
+    width: 95%;
+    height: 10vh;
+    display: flex;
+    background: #F2F5F4;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    margin-left: 35px;
+  }
+  button {
+    border: none;
+  }
+  .icons_button {
+    margin: 30px;
+  }
+  svg {
+    margin: 0 0 5px 0;
+  }
+  }
+
