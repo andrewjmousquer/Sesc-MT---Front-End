@@ -1,5 +1,6 @@
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components/Navbar";
+import { Hero } from "./Hero";
 
 import News from "./News";
 import Programming from "./ProgramingHome";
@@ -9,8 +10,7 @@ export function Home() {
   return (
     <div className="menu">
       <Navbar />
-      <br />
-      <br />
+      <Hero />
       <Slider />
       <br />
       <br />
