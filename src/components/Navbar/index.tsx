@@ -1,16 +1,20 @@
 ﻿import { useEffect, useState } from "react";
+
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+
 import "./styles.scss";
 
+const logoSesc = require("../../assets/img/logo Sesc.png");
+
 export function Navbar() {
-  const logoSesc = require("../../assets/img/logo Sesc.png");
   const [menuOpen, setMenuOpen] = useState(false);
   const [size, setSize] = useState({
     width: 0,
     height: 0,
   });
+
   useEffect(() => {
     const handleResize = () => {
       setSize({
@@ -34,13 +38,14 @@ export function Navbar() {
   };
 
   return (
-    <header className="header">
-      <div className="header__content">
-        <Link to="/" className="header__content__logo">
-          <img src={logoSesc} alt="Logo-Sesc" />
+    <header className="navbar navbar-expand-lg navbar-light fixed-top">
+      <section className="navbar__content">
+        <Link to="/" className="navbar__content__logo">
+          <img src={logoSesc} alt="SESC-MT - Logo" />
         </Link>
+
         <nav
-          className={`${"header__content__nav"}
+          className={`${"navbar__content__nav"}
           ${menuOpen && size.width < 768 ? `${"isMenu"}` : ""}
           }`}
         >
@@ -63,20 +68,23 @@ export function Navbar() {
             <li>
               <Link to="/sesc-tv">Sesc TV</Link>
             </li>
+
             <input className="login" type="text" placeholder="Busca..." />
+
             <Link to="/login">
               <button className="btn">Login</button>
             </Link>
           </ul>
         </nav>
-        <div className="header__content__toggle">
+
+        <div className="navbar__content__toggle">
           {!menuOpen ? (
             <BiMenuAltRight onClick={menuToggleHandler} />
           ) : (
             <AiOutlineClose onClick={menuToggleHandler} />
           )}
         </div>
-      </div>
+      </section>
     </header>
   );
 }
