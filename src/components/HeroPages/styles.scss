@@ -9,7 +9,7 @@
   border: 0;
   background-size: cover;
 
-  .content {
+  &__content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -18,8 +18,9 @@
     left: 3.75rem;
     bottom: 6.25rem;
     width: 50%;
+    height: 100vh;
 
-    .title {
+    &__title {
       font-family: "OpenSans-Bold";
       font-style: normal;
       font-weight: 700;
@@ -28,7 +29,7 @@
       color: $color-light-0;
     }
 
-    .subtitle {
+    &__subtitle {
       font-family: "OpenSans-Regular";
       font-style: normal;
       font-weight: 400;
@@ -38,7 +39,7 @@
     }
   }
 
-  .overlay {
+  &__overlay {
     position: absolute;
     z-index: 3;
     width: 100%;
