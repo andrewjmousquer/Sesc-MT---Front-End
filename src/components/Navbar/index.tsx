@@ -110,7 +110,7 @@ export function Navbar() {
                 <Form.Control
                   as={IMaskInput}
                   type="cpf"
-                  mask="000.00.000-00"
+                  mask="000.000.000-00"
                   placeholder="Digite o seu CPF"
                 />
               </Form.Group>

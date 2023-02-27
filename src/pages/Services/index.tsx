@@ -4,6 +4,16 @@ import { Card } from "../../components/Card";
 import { PaginationDefault } from "../../components/Pagination";
 import { Footer } from "../../components/Footer";
 
+
+const heros = [
+  {
+    id: 1,
+    title: "Serviços",
+    description: "Veja os serviços que oferemos hoje no SESC-MT",
+    img: "../../assets/img/image-1.png"
+  },
+]
+
 const cards = [
   {
     id: 1,
@@ -53,7 +63,16 @@ export function Services() {
   return (
     <>
       <Navbar />
-      <HeroPages />
+      {heros.map((hero) => {
+        return (
+          <HeroPages
+          key={hero.id}
+          title={hero.title}
+          description={hero.description}
+          img={hero.img}
+          />
+        )
+      })}
 
       <section className="container my-5">
         <section className="row">

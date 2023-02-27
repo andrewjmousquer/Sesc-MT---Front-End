@@ -12,6 +12,14 @@ import { Card_Prog } from '../../components/Card _Prog';
 
  export function Programming() {
 
+  const heros = [
+    {
+      id: 1,
+      title: "Programação",
+      description: "Confira todas as atividades dentro do Sesc Mato Grosso!",
+    },
+  ]
+
   const cards = [
   {
     id: 1,
@@ -38,7 +46,15 @@ import { Card_Prog } from '../../components/Card _Prog';
     return (
         <div>
           <Navbar />
-          <HeroPages />
+          {heros.map((hero) => {
+        return (
+          <HeroPages
+          key={hero.id}
+          title={hero.title}
+          description={hero.description}
+          />
+        )
+      })}
           <br />
           <div className='row'>
             <div className='col-8'>
