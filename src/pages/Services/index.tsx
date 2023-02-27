@@ -24,35 +24,35 @@ const cards = [
   },
   {
     id: 2,
-    title: "Portal da Academia",
+    title: "Cartão Sesc",
     description:
       "Movimentos que trabalham todo o corpo para fortalecimento e estabilização dos músculos, utilizando aparelhos próprios para a atividade.",
     link: "/academia",
   },
   {
     id: 3,
-    title: "Portal da Academia",
+    title: "Cursos e Atividades Sesc Mato Grosso",
     description:
       "Movimentos que trabalham todo o corpo para fortalecimento e estabilização dos músculos, utilizando aparelhos próprios para a atividade.",
     link: "/academia",
   },
   {
     id: 4,
-    title: "Portal da Academia",
+    title: "Contrato e Tabelas de Valores",
     description:
       "Movimentos que trabalham todo o corpo para fortalecimento e estabilização dos músculos, utilizando aparelhos próprios para a atividade.",
     link: "/academia",
   },
   {
     id: 5,
-    title: "Portal da Academia",
+    title: "Editais PCG",
     description:
       "Movimentos que trabalham todo o corpo para fortalecimento e estabilização dos músculos, utilizando aparelhos próprios para a atividade.",
     link: "/academia",
   },
   {
     id: 6,
-    title: "Portal da Academia",
+    title: "Fale Conosco",
     description:
       "Movimentos que trabalham todo o corpo para fortalecimento e estabilização dos músculos, utilizando aparelhos próprios para a atividade.",
     link: "/academia",
@@ -69,7 +69,6 @@ export function Services() {
           key={hero.id}
           title={hero.title}
           description={hero.description}
-          img={hero.img}
           />
         )
       })}

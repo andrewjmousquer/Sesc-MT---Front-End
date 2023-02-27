@@ -37,7 +37,7 @@ import { Card_Prog } from '../../components/Card _Prog';
   },
   {
     id: 3,
-    title: "Recreação no Espaço Recreativo",
+    title: "Corrida esportiva de fim de semana",
     description:
       "Serão executadas atividades lúdicas no espaço Recreativo propiciando desenvolvimento diversas habilidades: motoras, sociai e emocionais. E através das brincadeiras exploraremos a criatividade e a imaginação.",
     link: "/programacao",
