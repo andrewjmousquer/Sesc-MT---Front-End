@@ -6,7 +6,7 @@ import { CgCalendarToday, } from "react-icons/cg";
 import { HiTicket, } from "react-icons/hi";
 import { RiCheckboxMultipleBlankFill, } from "react-icons/ri";
 import './style.scss'
-import { Card } from '../../components/Card';
+import { Card_Prog } from '../../components/Card _Prog';
 
 
 
@@ -15,24 +15,24 @@ import { Card } from '../../components/Card';
   const cards = [
   {
     id: 1,
-    title: "Portal da Academia",
+    title: "Pacote Fitness",
     description:
-      "Movimentos que trabalham todo o corpo para fortalecimento e estabilização dos músculos, utilizando aparelhos próprios para a atividade.",
-    link: "/academia",
+      "Serão executadas atividades lúdicas no espaço Recreativo propiciando desenvolvimento diversas habilidades: motoras, sociai e emocionais. E através das brincadeiras exploraremos a criatividade e a imaginação.",
+    link: "/programacao",
   },
   {
     id: 2,
-    title: "Portal da Academia",
+    title: "Recreação no Espaço Recreativo",
     description:
-      "Movimentos que trabalham todo o corpo para fortalecimento e estabilização dos músculos, utilizando aparelhos próprios para a atividade.",
-    link: "/academia",
+      "Serão executadas atividades lúdicas no espaço Recreativo propiciando desenvolvimento diversas habilidades: motoras, sociai e emocionais. E através das brincadeiras exploraremos a criatividade e a imaginação.",
+    link: "/programacao",
   },
   {
     id: 3,
-    title: "Portal da Academia",
+    title: "Recreação no Espaço Recreativo",
     description:
-      "Movimentos que trabalham todo o corpo para fortalecimento e estabilização dos músculos, utilizando aparelhos próprios para a atividade.",
-    link: "/academia",
+      "Serão executadas atividades lúdicas no espaço Recreativo propiciando desenvolvimento diversas habilidades: motoras, sociai e emocionais. E através das brincadeiras exploraremos a criatividade e a imaginação.",
+    link: "/programacao",
   },
 ];
     return (
@@ -65,7 +65,7 @@ import { Card } from '../../components/Card';
                     {cards.map((card) => {
                       return (
                         <section key={card.id} className="col col-md-6 col-lg-4 mb-5">
-                          <Card
+                          <Card_Prog
                             key={card.id}
                             title={card.title}
                             description={card.description}
